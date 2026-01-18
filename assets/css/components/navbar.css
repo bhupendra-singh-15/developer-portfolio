@@ -1,0 +1,134 @@
+/*=============== HEADER & NAV ===============*/
+/* HEADER */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    var(--body-color) 60%,
+    hsla(240, 100%, 2%, 0) 100%
+  );
+  z-index: var(--z-fixed);
+}
+.header .blob-animate {
+  top: -3rem;
+  left: -3rem;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+  height: var(--header-height);
+  align-items: center;
+}
+
+.nav__logo {
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  transition: color 0.4s;
+}
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+/* Nav Buttons */
+.nav__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.change-theme,
+.nav__toggle {
+  background-color: transparent;
+  color: var(--title-color);
+  cursor: pointer;
+}
+.nav__toggle {
+  font-size: 1.5rem;
+}
+
+/* Nav Menu (Mobile default) */
+.nav__menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  padding: 3rem;
+  background-color: var(--container-color);
+  box-shadow: -1px 0px 16px var(--first-color);
+  transition: right 0.4s;
+}
+.show-menu {
+  right: 0;
+}
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Nav Items */
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  font: var(--font-semi-bold) var(--small-font-size) var(--second-font);
+  color: var(--title-color);
+  transition: color 0.4s, text-shadow 0.4s;
+}
+.nav__link:hover,
+.active-link {
+  color: var(--first-color);
+  text-shadow: 0 8px 16px var(--first-color);
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+/* Medium / Tablet screens (768px to 1149px) */
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .nav__list {
+    grid-auto-flow: column;
+    column-gap: 5rem !important;
+    row-gap: 0 !important;
+  }
+  #nav-toggle,
+  #nav-close {
+    display: none;
+  }
+  .change-theme {
+    display: block;
+  }
+}
+
+/* Large / Desktop screens (1150px and above) */
+@media screen and (min-width: 1150px) {
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+  .nav__list {
+    justify-content: space-between;
+  }
+}

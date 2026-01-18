@@ -1,0 +1,122 @@
+/* CONTACT */
+.contact__container {
+  row-gap: 4rem;
+  padding-bottom: 2rem;
+}
+.contact .section__title {
+  margin-bottom: 1rem;
+}
+.contact__data {
+  text-align: center;
+}
+.contact__description {
+  font-family: var(--second-font);
+  margin-bottom: 1.5rem;
+}
+.contact__email {
+  display: none;
+}
+.contact__button {
+  cursor: pointer;
+}
+.contact__content {
+  row-gap: 3rem;
+}
+.contact__info {
+  row-gap: 1rem;
+}
+.contact__title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+.contact__address {
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: var(--font-medium);
+  text-align: center;
+}
+.contact__links {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  row-gap: 0.25rem;
+}
+.contact__link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: transform 0.4s, color 0.4s;
+}
+.contact__link i {
+  font-size: 1.5rem;
+}
+.contact__link:hover {
+  transform: translateX(0.35rem);
+  color: var(--text-color);
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  padding-block: 4rem 2rem;
+  text-align: center;
+  row-gap: 1rem;
+  overflow: hidden;
+}
+.footer .blob-animate {
+  top: initial;
+  left: initial;
+  right: -3rem;
+  bottom: -3rem;
+}
+.footer__copy {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-family: var(--second-font);
+}
+.footer__copy span {
+  color: var(--title-color);
+}
+.footer__year {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+}
+
+/*=============== DESKTOP (Media Queries) ===============*/
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .contact {
+    padding-block: 9rem 4rem;
+  }
+
+  .contact__container {
+    row-gap: 8rem;
+  }
+
+  .contact__info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contact__description {
+    font-size: var(--h2-font-size);
+  }
+  .contact__title {
+    margin-bottom: 0.75rem;
+  }
+
+  .contact__links {
+    row-gap: 0.5rem;
+  }
+
+  .contact__link {
+    font-size: 1.25rem;
+  }
+}

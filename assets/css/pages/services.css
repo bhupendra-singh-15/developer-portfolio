@@ -1,0 +1,162 @@
+/* ==================== SERVICES CARDS ==================== */
+.services__container {
+  row-gap: 2rem;
+  justify-content: center;
+  display: grid;
+}
+
+/* Single card styling */
+.services__card {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem;
+  border-radius: 3rem;
+  display: grid;
+  row-gap: 1.5rem;
+  overflow: hidden;
+}
+
+/* Decorative blob */
+.services__card .blob {
+  z-index: 0;
+  top: -7.75rem;
+  left: -7.75rem;
+  position: absolute;
+}
+.services__card .blob-2 {
+  left: initial;
+  right: -7.75rem;
+}
+
+/* Card content */
+.services__data,
+.services__info {
+  position: relative;
+  z-index: 1;
+}
+
+/* Titles & subtitles */
+.services__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.services__subtitle {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-regular);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Skills list */
+.services__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.25rem;
+  align-items: center;
+}
+
+.services__skill {
+  background: var(--container-color);
+  color: var(--title-color);
+  border: 1px solid var(--title-color);
+  padding: 4px 10px;
+  border-radius: 4rem;
+  font-size: var(--smaller-font-size);
+  font-family: var(--second-font);
+}
+
+/* Accordion animation */
+.services__info {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.45s ease, opacity 0.35s ease;
+}
+
+.services-open .services__info {
+  opacity: 1;
+}
+
+/* Toggle Button */
+.services__button {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  display: grid;
+  place-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: var(--title-color);
+  color: var(--body-color);
+  border-radius: 50%;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.services__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/* Arrow icon rotation */
+.services__button i {
+  display: block;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease;
+}
+
+.services-open .services__button i {
+  transform: rotate(180deg);
+}
+
+/* ==================== RESPONSIVE GRID ==================== */
+
+/* Small devices */
+@media screen and (min-width: 540px) {
+  .services__container {
+    grid-template-columns: 460px;
+  }
+}
+
+/* Medium devices / Tablets */
+@media screen and (min-width: 768px) {
+  .services__container {
+    grid-template-columns: repeat(2, 350px);
+    align-items: flex-start;
+  }
+  .services__card {
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 4rem;
+    row-gap: 2rem;
+  }
+}
+
+/* Large devices / Desktop */
+@media screen and (min-width: 1150px) {
+  .services__container {
+    grid-template-columns: repeat(2, 455px);
+    column-gap: 5rem;
+  }
+
+  .services__card {
+    padding: 3rem 3rem 4rem 3rem;
+    border-radius: 4rem;
+    row-gap: 2rem;
+  }
+
+  .services__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+  }
+
+  .services__button {
+    bottom: 2rem;
+  }
+}

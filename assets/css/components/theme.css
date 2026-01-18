@@ -1,0 +1,48 @@
+/* Theme panel */
+.theme-colors {
+  position: fixed;
+  top: 5rem;
+  right: 1.5rem;
+  background: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 60px;
+
+  /* Hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+
+  transition: 0.3s ease;
+  border: 2px solid var(--first-color);
+  z-index: 999;
+}
+
+/* Visible state */
+.theme-colors.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Color circle */
+.theme-colors .color {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color);
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.2s;
+}
+
+.theme-colors .color:hover {
+  transform: scale(1.2);
+}
+
+.change-theme i {
+  font-size: 1.2rem;
+}

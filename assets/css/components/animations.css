@@ -1,0 +1,52 @@
+/* BLOB ANIMATIONS */
+.blob-animate {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    var(--first-color-alt) 20%,
+    var(--first-color-light) 100%
+  );
+  position: absolute;
+  filter: blur(35px);
+  z-index: -1;
+  border-radius: 50%;
+  animation: animateBlob 5s linear infinite;
+}
+@keyframes animateBlob {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Testimonials Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*=============== DESKTOP (Media Queries) ===============*/
+
+/* For small devices (max-width) */
+@media screen and (max-width: 320px) {
+  .blob {
+    display: none;
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .blob {
+    width: 300px;
+    height: 300px;
+  }
+}

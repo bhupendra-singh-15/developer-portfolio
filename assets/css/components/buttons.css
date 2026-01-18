@@ -1,0 +1,23 @@
+/* BUTTON */
+.button {
+  background-color: var(--body-color);
+  border: 2px solid var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 32px hsla(var(--hue), 60%, 64%, 0.5),
+    inset 8px -8px 30px var(--first-color-alt-2);
+  border-radius: 4rem;
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  display: inline-block;
+  column-gap: 0.5rem;
+  transition: box-shadow 0.4s;
+}
+.button i {
+  font-size: 1rem;
+  font-weight: initial;
+}
+.button:hover {
+  box-shadow: 0 8 48px hsla(var(--hue), 60%, 64%, 0.7),
+    inset 8px -8px 40px var(--first-color-alt-2);
+}

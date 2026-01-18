@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Bhupendra Singh — Developer & Designer"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/icons/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+
+    <link rel="stylesheet" href="libs/css/swiper-bundle.css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Bhupendra Singh — Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header" id="header" role="banner">
+      <div class="blob-animate" aria-hidden="true"></div>
+
+      <nav class="nav container" role="navigation" aria-label="Main navigation">
+        <a href="#" class="nav__logo">Bhupendra</a>
+
+        <div class="nav__menu" id="nav-menu" aria-hidden="true">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <button class="nav__close" id="nav-close" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <div class="nav__btns">
+          <button
+            class="change-theme"
+            id="theme-button"
+            aria-label="Toggle theme"
+          >
+            <i class="ri-palette-line"></i>
+          </button>
+
+          <div class="theme-colors" id="theme-colors"></div>
+
+          <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="cursor" aria-hidden="true"></div>
+
+      <section class="home section" id="home" aria-labelledby="home-title">
+        <div class="home__shadow" aria-hidden="true"></div>
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__greeting">Hello, I'm</h3>
+            <h1 id="home-title" class="home__name">Bhupendra <br />Singh</h1>
+          </div>
+
+          <div class="home__image" aria-hidden="true">
+            <div class="blob-animate" aria-hidden="true"></div>
+            <img
+              src="assets/images/home-perfil.JPG"
+              alt="Bhupendra Singh"
+              class="home__perfil"
+            />
+          </div>
+
+          <div class="home__info">
+            <h3 class="home__split">Aspiring</h3>
+            <h2 class="home__profession-1">Full Stack</h2>
+            <h2 class="home__profession-2">Engineer</h2>
+          </div>
+
+          <div class="home__social" aria-hidden="true">
+            <a
+              href="https://www.linkedin.com/in/bhupendra-singh-2a0947279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="home__social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a
+              href="https://github.com/bhupendra-singh-0204"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="home__social-link"
+              aria-label="GitHub"
+            >
+              <i class="ri-github-line"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ritik.xv34?igsh=eXg4dzNsazd3dnMx"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="home__social-link"
+              aria-label="Instagram"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://x.com/Bhupendra_0204?t=1LyJ_cO9wbTS4LEHumaVoQ&s=08"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="home__social-link"
+              aria-label="X (Twitter)"
+            >
+              <i class="ri-twitter-x-line"></i>
+            </a>
+          </div>
+
+          <a
+            href="/documents/bhupendra_singh_resume.pdf"
+            download
+            class="home__cv"
+            aria-label="Download resume"
+          >
+            RESUME <i class="ri-file-list-2-line"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__shadow" aria-hidden="true"></div>
+
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title"><span>Executive</span><br />Summary</h2>
+
+            <p class="about__description">
+              Dedicated <strong>Full Stack Developer</strong> specializing in
+              the <strong> MERN</strong> (MongoDB, Express.js, React.js,
+              Node.js) stack, committed to architecting and deploying scalable,
+              high-performance web applications. Proficient in designing robust
+              RESTful APIs, building responsive interfaces with React/Tailwind
+              CSS, and applying a strong foundation in Data Structures and
+              Algorithms (DSA) to deliver complex, user-centric solutions.
+            </p>
+
+            <a
+              href="/documents/bhupendra_singh_resume.pdf"
+              download
+              class="button"
+              >Resume <i class="ri-file-list-2-line"></i
+            ></a>
+          </div>
+
+          <div class="about__image" aria-hidden="true">
+            <div class="blob-animate" aria-hidden="true"></div>
+            <div class="blob-animate" aria-hidden="true"></div>
+            <img
+              src="assets/images/home-perfil.JPG"
+              alt="About Bhupendra"
+              class="about__perfil"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="section__title">
+          I Make Incredible <br /><span>Projects</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <div class="projects__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="projects__card swiper-slide">
+                <div class="blob" aria-hidden="true"></div>
+                <div class="projects__number">
+                  <h1>01</h1>
+                  <h3>Full-Stack</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    StudyNotion - <span>Full-Stack Ed-Tech Platform</span>
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">
+                    <strong>Frontend: </strong>React.js, Redux, Tailwind CSS
+                  </p>
+                  <p class="projects__description">
+                    <strong>Backend: </strong>Node.js, Express.js, MongoDB
+                  </p>
+
+                  <div class="projects__image">
+                    <img
+                      src="assets/images/projects-1.png"
+                      alt="Project preview"
+                      class="projects__img"
+                    />
+                    <a
+                      href="https://studynotion-edtech-frontend-gamma.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="projects__button"
+                      aria-label="Open project"
+                    >
+                      <i class="ri-arrow-right-up-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card swiper-slide">
+                <div class="blob" aria-hidden="true"></div>
+                <div class="projects__number">
+                  <h1>02</h1>
+                  <h3>Web-Frontend</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Film-Fusion - <span> Movie Search Platform</span>
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">
+                    <strong>Frontend: </strong>HTML, CSS, JavaScript
+                  </p>
+                  <p class="projects__description">
+                    <strong>API : </strong>The Movie Database (TMDb) API
+                  </p>
+
+                  <div class="projects__image">
+                    <img
+                      src="assets/images/projects-2.png"
+                      alt="Project preview"
+                      class="projects__img"
+                    />
+                    <a
+                      href="https://film-fusion-app.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="projects__button"
+                      aria-label="Open project"
+                    >
+                      <i class="ri-arrow-right-up-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="projects__card swiper-slide">
+                <div class="blob" aria-hidden="true"></div>
+                <div class="projects__number">
+                  <h1>03</h1>
+                  <h3>Web-Frontend</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">Dev-Detective</h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">
+                    <strong>Frontend: </strong>HTML, CSS, JavaScript
+                  </p>
+                  <div class="projects__image">
+                    <img
+                      src="assets/images/projects-3.png"
+                      alt="Project preview"
+                      class="projects__img"
+                    />
+                    <a
+                      href="https://dev-detective-search.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="projects__button"
+                      aria-label="Open project"
+                    >
+                      <i class="ri-arrow-right-up-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects__card swiper-slide">
+                <div class="blob" aria-hidden="true"></div>
+                <div class="projects__number">
+                  <h1>04</h1>
+                  <h3>Web-Frontend</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">Passwrod-generator</h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">
+                    <strong>Frontend: </strong>HTML, CSS, JavaScript
+                  </p>
+                  <div class="projects__image">
+                    <img
+                      src="assets/images/projects-4.png"
+                      alt="Project preview"
+                      class="projects__img"
+                    />
+                    <a
+                      href="https://secure-pass-gen-app.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="projects__button"
+                      aria-label="Open project"
+                    >
+                      <i class="ri-arrow-right-up-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-pagination" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <h2 class="section__title">Technical <br /><span>Journey </span></h2>
+
+        <div class="work__container container grid">
+          <div class="work__tabs" role="tablist" aria-label="Work tabs">
+            <button
+              class="work__button work-active"
+              data-target="#experience"
+              role="tab"
+              aria-selected="true"
+            >
+              Technical Work <i class="ri-briefcase-3-line"></i>
+            </button>
+            <button
+              class="work__button"
+              data-target="#education"
+              role="tab"
+              aria-selected="false"
+            >
+              Education <i class="ri-graduation-cap-line"></i>
+            </button>
+          </div>
+
+          <div class="work__area">
+            <div class="work__line" aria-hidden="true"></div>
+
+            <div
+              class="work__content work-active"
+              data-content
+              id="experience"
+              role="tabpanel"
+            >
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Data Structures & <br />Algorithms
+                    </h1>
+                    <h3 class="work__subtitle">
+                      Competitive Programming (DSA)
+                    </h3>
+                  </div>
+                  <h3 class="work__year">2022-Present</h3>
+                </div>
+                <p class="work__description">
+                  Solved 150+ coding problems across platforms like LeetCode and
+                  CodeChef, confirming strong analytical, logical, and
+                  algorithmic thinking skills essential for building efficient
+                  software. Achieved 5+ badges in problem-solving excellence.
+                </p>
+              </div>
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Full Stack <br />Ed-Tech Platform
+                    </h1>
+                    <h3 class="work__subtitle">
+                      StudyNotion Project (MERN Stack)
+                    </h3>
+                  </div>
+                  <h3 class="work__year">2024</h3>
+                </div>
+                <p class="work__description">
+                  Primary developer for a comprehensive e-learning platform
+                  built using the MERN stack. Designed and implemented secure,
+                  role-based authentication, integrated Redux for global state
+                  management, and handled critical third-party integrations
+                  (Razorpay for payments and Cloudinary for media storage).
+                </p>
+              </div>
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Core Web <br />
+                      Development
+                    </h1>
+                    <h3 class="work__subtitle">
+                      Vanilla JS & Responsive Design
+                    </h3>
+                  </div>
+                  <h3 class="work__year">2023</h3>
+                </div>
+                <p class="work__description">
+                  Applied foundational web expertise by building the Film-Fusion
+                  Movie Search Platform and completing the freeCodeCamp
+                  Responsive Web Design Certification, ensuring modern,
+                  mobile-first design proficiency.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="work__content"
+              data-content
+              id="education"
+              role="tabpanel"
+              hidden
+            >
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Bachelor of Technology <br />(CSE)
+                    </h1>
+                    <h3 class="work__subtitle">
+                      Technocrats Institute of Technology & Science,Bhopal
+                    </h3>
+                  </div>
+                  <h3 class="work__year">2021-2025</h3>
+                </div>
+                <p class="work__description">
+                  B.Tech in Computer Science Engineering, completed June
+                  2025,<br />
+                  CGPA 7.81.
+                </p>
+              </div>
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">12th Standard <br />(MPBSE)</h1>
+                    <h3 class="work__subtitle">
+                      Dr. K. L. Papneja Higher Secondary School,Kareli
+                    </h3>
+                  </div>
+                  <h3 class="work__year">2021</h3>
+                </div>
+                <p class="work__description">
+                  Achieved 89.2% in the 12th standard (MPBSE), demonstrating
+                  consistent academic excellence and dedication.
+                </p>
+              </div>
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">10th Standard<br />(MPBSE)</h1>
+                    <h3 class="work__subtitle">
+                      Dr. K. L. Papneja Higher Secondary School,Kareli
+                    </h3>
+                  </div>
+                  <h3 class="work__year">2019</h3>
+                </div>
+                <p class="work__description">
+                  Achieved 89.2% in the 10th standard (MPBSE), showcasing a
+                  strong foundation in core academics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="services__container container grid">
+          <!-- Developer Card -->
+          <div class="services__card services-open">
+            <div class="blob" aria-hidden="true"></div>
+
+            <div class="services__data">
+              <h2 class="services__title">Full Stack Development</h2>
+              <p class="services__description">
+                I architect and deploy robust, scalable full-stack web
+                applications, specializing in the MERN stack. My focus is on
+                creating high-performance, secure, and user-friendly digital
+                solutions.
+              </p>
+            </div>
+
+            <div class="services__info">
+              <h3 class="services__subtitle">Primary Stack & Tools</h3>
+              <ul class="services__skills">
+                <li class="services__skill">HTML</li>
+                <li class="services__skill">CSS</li>
+                <li class="services__skill">Javascript</li>
+                <li class="services__skill">React.js & Redux</li>
+                <li class="services__skill">Node.js & Express.js</li>
+                <li class="services__skill">MongoDB & SQL</li>
+                <li class="services__skill">Tailwind CSS</li>
+                <li class="services__skill">RESTful APIs</li>
+                <li class="services__skill">JWT & Bcrypt</li>
+                <li class="services__skill">Cloudinary/Razorpay</li>
+              </ul>
+            </div>
+
+            <button
+              class="services__button"
+              aria-label="Toggle service details"
+            >
+              <i class="ri-arrow-down-line"></i>
+            </button>
+          </div>
+
+          <!-- Knowledge Card -->
+          <div class="services__card services-close">
+            <div class="blob blob-2" aria-hidden="true"></div>
+
+            <div class="services__data">
+              <h2 class="services__title">Concepts & Languages</h2>
+              <p class="services__description">
+                I approach software engineering with a strong foundation in
+                algorithmic thinking and core computer science concepts. My
+                focus is on writing clean, efficient, and scalable code.
+              </p>
+            </div>
+
+            <div class="services__info">
+              <h3 class="services__subtitle">Concepts & Languages</h3>
+              <ul class="services__skills">
+                <li class="services__skill">
+                  DSA (Data Structures & Algorithms)
+                </li>
+                <li class="services__skill">
+                  OOP (Object-Oriented Programming)
+                </li>
+                <li class="services__skill">Java Programming Language</li>
+                <li class="services__skill">C Programming Language</li>
+                <li class="services__skill">Git/GitHub</li>
+              </ul>
+            </div>
+
+            <button
+              class="services__button"
+              aria-label="Toggle service details"
+            >
+              <i class="ri-arrow-down-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <h2 class="section__title"><span>What They Say</span><br />About Me</h2>
+
+        <div class="testimonials__container container grid" aria-hidden="true">
+          <div class="testimonials__content">
+            <article class="testimonials__card">
+              <div class="blob" aria-hidden="true"></div>
+              <div class="testimonials__data">
+                <img
+                  src="assets/images/testimonial-img-1.jpg"
+                  alt="Client photo"
+                  class="testimonials__image"
+                />
+                <h2 class="testimonials__name">Ritik Rajput</h2>
+
+                <div class="testimonials__rating">
+                  <div class="testimonials__stars">
+                    <i class="ri-star-fill"> </i><i class="ri-star-fill"> </i
+                    ><i class="ri-star-fill"> </i> <i class="ri-star-fill"> </i
+                    ><i class="ri-star-half-line"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">4.5</h3>
+                </div>
+
+                <p>
+                  Bhupendra's MERN proficiency and implementation of secure
+                  features like JWT authentication and Razorpay were
+                  outstanding. Back-end stability is flawless, proving him a
+                  true full-stack professional.
+                </p>
+              </div>
+            </article>
+            <article class="testimonials__card">
+              <div class="blob" aria-hidden="true"></div>
+              <div class="testimonials__data">
+                <img
+                  src="assets/images/testimonial-img-2.jpg"
+                  alt="Client photo"
+                  class="testimonials__image"
+                />
+                <h2 class="testimonials__name">Sanket Patel</h2>
+
+                <div class="testimonials__rating">
+                  <div class="testimonials__stars">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                    ><i class="ri-star-line"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">4.0</h3>
+                </div>
+
+                <p>
+                  The front-end is incredibly responsive and user-friendly,
+                  thanks to his expert use of React.js and Tailwind CSS. He
+                  ensures a seamless experience across all devices with a keen
+                  eye for detail.
+                </p>
+              </div>
+            </article>
+            <article class="testimonials__card">
+              <div class="blob" aria-hidden="true"></div>
+              <div class="testimonials__data">
+                <img
+                  src="assets/images/testimonial-img-3.jpg"
+                  alt="Client photo"
+                  class="testimonials__image"
+                />
+                <h2 class="testimonials__name">Ankit Bharadwaj</h2>
+
+                <div class="testimonials__rating">
+                  <div class="testimonials__stars">
+                    <i class="ri-star-fill"> </i><i class="ri-star-fill"> </i
+                    ><i class="ri-star-fill"> </i> <i class="ri-star-fill"> </i
+                    ><i class="ri-star-half-line"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">4.5</h3>
+                </div>
+
+                <p>
+                  Bhupendra handled the TMDb API integration with impressive
+                  speed and accuracy for our platform. The real-time data
+                  display is fast and reliable, showing excellent front-end and
+                  back-end logic connection.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="testimonials__content testimonials__reverse"
+            aria-hidden="true"
+          >
+            <article class="testimonials__card">
+              <div class="blob" aria-hidden="true"></div>
+              <div class="testimonials__data">
+                <img
+                  src="assets/images/testimonial-img-4.jpg"
+                  alt="Client photo"
+                  class="testimonials__image"
+                />
+                <h2 class="testimonials__name">Uday Pratap Kourav</h2>
+
+                <div class="testimonials__rating">
+                  <div class="testimonials__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">4.0</h3>
+                </div>
+
+                <p>
+                  His understanding of MongoDB and RESTful API architecture is
+                  strong. He structured the database efficiently, resulting in
+                  quick load times and high performance with clean, scalable
+                  code.
+                </p>
+              </div>
+            </article>
+            <article class="testimonials__card">
+              <div class="blob" aria-hidden="true"></div>
+              <div class="testimonials__data">
+                <img
+                  src="assets/images/testimonial-img-5.jpg"
+                  alt="Client photo"
+                  class="testimonials__image"
+                />
+                <h2 class="testimonials__name">Yogesh Bharadwaj</h2>
+
+                <div class="testimonials__rating">
+                  <div class="testimonials__stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">5.0</h3>
+                </div>
+
+                <p>
+                  Bhupendra's dedication to quality is clear, his approach is
+                  informed by strong DSA fundamentals allowing him to solve
+                  problems effectively. The code documentation and structure are
+                  professional and easy to maintain.
+                </p>
+              </div>
+            </article>
+            <article class="testimonials__card">
+              <div class="blob" aria-hidden="true"></div>
+              <div class="testimonials__data">
+                <img
+                  src="assets/images/testimonial-img-6.jpg"
+                  alt="Client photo"
+                  class="testimonials__image"
+                />
+                <h2 class="testimonials__name">Gourav Jatav</h2>
+
+                <div class="testimonials__rating">
+                  <div class="testimonials__stars">
+                    <i class="ri-star-fill"> </i><i class="ri-star-fill"> </i
+                    ><i class="ri-star-fill"> </i> <i class="ri-star-fill"> </i
+                    ><i class="ri-star-half-line"></i>
+                  </div>
+
+                  <h3 class="testimonials__number">4.5</h3>
+                </div>
+
+                <p>
+                  He seamlessly integrated Cloudinary for media storage on our
+                  platform, optimizing it for content delivery. His full-stack
+                  knowledge, spanning front-end styling to cloud services, is a
+                  huge asset.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+            <h2 class="section__title">Contact Me</h2>
+            <p class="contact__description">Tell me about your next project.</p>
+
+            <button
+              class="contact__button button"
+              id="contact-btn"
+              aria-live="polite"
+            >
+              Copy email <i class="ri-file-copy-line"></i>
+              <span class="contact__email" id="contact-email"
+                >bhupendra.singh.vector@gmail.com</span
+              >
+            </button>
+          </div>
+
+          <div class="contact__content grid">
+            <div class="contact__info grid">
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <address class="contact__address">
+                  bhupendra.singh.vector@gmail.com
+                </address>
+              </div>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <address class="contact__address">
+                  Bhopal, India (462041)
+                </address>
+              </div>
+              <div class="contact__links">
+                <h3 class="contact__title">Write Me & w'll talk</h3>
+                <a
+                  href="mailto:bhupendra.singh.vector@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  >Email <i class="ri-arrow-right-up-long-line"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/bhupendra-singh-2a0947279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  >LinkedIn <i class="ri-arrow-right-up-long-line"></i
+                ></a>
+                <a
+                  href="https://wa.me/918815464623"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                >
+                  WhatsApp <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+                <a
+                  href="https://t.me/ritik_xv34"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                >
+                  Telegram <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+              </div>
+              <div class="contact__links">
+                <h3 class="contact__title">Coding platforms</h3>
+                <a
+                  href="https://leetcode.com/u/Bhupendra_singh_0204/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  >LeetCode <i class="ri-arrow-right-up-long-line"></i
+                ></a>
+                <a
+                  href="https://www.naukri.com/code360/profile/5a469e78-e462-4270-ad67-2a74a0283b77"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  >Naukri <i class="ri-arrow-right-up-long-line"></i
+                ></a>
+                <a
+                  href="https://www.geeksforgeeks.org/profile/bhupendra_0204"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  >GFG <i class="ri-arrow-right-up-long-line"></i
+                ></a>
+                <a
+                  href="https://www.codechef.com/users/bhupendra_0204"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  >CodeChef <i class="ri-arrow-right-up-long-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer grid" role="contentinfo">
+      <div class="blob-animate" aria-hidden="true"></div>
+      <div class="footer__copy">
+        All Rights Reserved By <span>Ritik_Rajput</span>
+      </div>
+      <div class="footer__year">&#169; <span id="footer-year"></span></div>
+    </footer>
+
+    <script src="libs/js/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script src="libs/js/swiper-bundle.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/components/navbar.js"></script>
+    <script src="assets/js/components/theme-toggle.js"></script>
+    <script src="assets/js/components/split-text-init.js"></script>
+    <script src="assets/js/components/swiper-init.js"></script>
+    <script src="assets/js/components/work-tabs.js"></script>
+    <script src="assets/js/components/accordion.js"></script>
+    <script src="assets/js/components/testimonial-scroll.js"></script>
+    <script src="assets/js/components/copy-email.js"></script>
+    <script src="assets/js/components/scroll-active.js"></script>
+    <script src="assets/js/components/cursor.js"></script>
+    <script src="assets/js/components/scrollreveal-init.js"></script>
+    <script src="assets/js/components/initializer.js"></script>
+  </body>
+</html>
